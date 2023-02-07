@@ -61,9 +61,8 @@ const Create = () => {
         />
 
         <button>Create Smoothie Recipe</button>
+        {formError && <p className="error">{formError}</p>}
       </form>
-
-      {formError && <p className="error">{formError}</p>}
     </div>
   );
 };
